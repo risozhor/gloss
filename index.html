@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/nav-layout.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="./css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
     <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
@@ -171,7 +172,6 @@
         <a href="#" class="nav-close"> Закрыть меню </a>
       </div>
     </div>
-
     <div class="container">
       <div class="d-flex flex-row">
         <div class="rubber">
@@ -338,7 +338,63 @@
           <img src="http://via.placeholder.com/300x250">
         </div><!-- fix -->
       </div><!-- d-flex flex-row -->
+
+
     </div><!-- container -->
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jcarousel-wrapper">
+						<a href="#" class="jcarousel-prev-horizontal"></a>
+						<a href="#" class="jcarousel-next-horizontal"></a>
+							<div class="jcarousel">
+								<ul id="mycarousel2" class="jcarousel-skin-tango">
+									<li>
+										<div class="post_carousel">
+											<img src="img/home_blog/1.jpg" alt="" />
+											<div class="title_t"><a href="./page.html">Квентин Тарантино устроил вечеринку по случаю помолвки</a></div>
+											Хотя известный режиссер Квентин Тарантино сделал предложение своей любимой — 32-летней израильской певице Даниэлле Пик — еще этим летом, время отпраздновать это знаменательное событие он нашел только сейчас.<br/><a href="./page.html" class="arrow_link">подробнее...</a>
+										</div>
+									</li>
+									<li>
+										<div class="post_carousel">
+												<img src="img/home_blog/2.jpg" alt="" />
+												<div class="title_t"><a href="./page.html">Алан Бадоев рассказал об отцовстве и осознанном одиночестве</a></div>
+												Приставка By Badoev давно стала знаком качества, а работы самого режиссера обречены на успех. К своему юбилею у него за плечами множество наград и званий, армия “молодых и перспективных“<br/><a href="./page.html" class="arrow_link">подробнее...</a>
+											</div>
+									</li>
+									<li>
+										<div class="post_carousel">
+												<img src="img/home_blog/3.jpg" alt="" />
+												<div class="title_t"><a href="./page.html">На телеканале 1+1 состоится эфир  проекта Танці з зірками.</a></div>
+												В рамках шестого выпуска звездных участников проекта ждет настоящее испытание, с которым смогут справиться только сильнейшие. Так, в следующее выпуске Наталья Могилевская, Ахтем Сеитаблаев, Надя Дорофеева<br/><a href="./page.html" class="arrow_link">подробнее...</a>
+											</div>
+									</li>
+									<li>
+										<div class="post_carousel">
+												<img src="img/home_blog/4.jpg" alt="" />
+												<div class="title_t"><a href="./page.html">Марк Энтони обратился к Дональду Трампу: Господин президент, закройте рот</a></div>
+													Экс-супруг, певицы Дженнифер Лопес, 49-летний Марк Энтони, бурно отрегировал на слова Дональда Трампа, касающиеся американских спортсменов. На днях президент США предложил<br/><a href="./page.html" class="arrow_link">подробнее...</a>
+											</div>
+									</li>
+									<li>
+										<div class="post_carousel">
+												<img src="img/home_blog/5.jpg" alt="" />
+												<div class="title_t"><a href="./page.html">Джамала раскритиковала языковую политику в Украине</a></div>
+													Победительница Евровидения 2016, украинская певица Джамала заявила, что украинский закон о языковых квотах в эфире радиостанций нуждается в доработке, сказала артистка в интервью 5 каналу.<br/><a href="./page.html" class="arrow_link">подробнее...</a>
+											</div>
+									</li>
+							  </ul>
+
+            </div>
+					</div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container">
       <div class="d-flex flex-row">
@@ -580,7 +636,14 @@
     <script src="./js/nav.jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+  	<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
     <script>
+    $(function()
+  	{
+  		$('.jcarousel-prev-horizontal').jcarouselControl({target: '-=1'});
+  		$('.jcarousel-next-horizontal').jcarouselControl({target: '+=1'});
+  	});
         $('.nav').nav();
         var ua = navigator.userAgent;
     				if (ua.search(/MSIE/) > 0 || ua.search(/.NET/) > 0 )
