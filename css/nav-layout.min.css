@@ -23,7 +23,7 @@ header h1{margin:0;font-size:1.7rem;line-height:4.4rem}
 header h1:before{content:"\E004";margin-right:8px}
 .nav-button,.nav-close{
   position: fixed;
-      top: 10px;
+      top: 18px;
       /*width: 4.4rem;
       height: 4.4rem;
       overflow: hidden;*/
@@ -32,10 +32,10 @@ header h1:before{content:"\E004";margin-right:8px}
       /*text-decoration: none;
       line-height: 6.4rem;
       /* background: #26201C; */
-      color: #A69A94;*/
+      color: #000;*/
 }
 .nav-button a{color: #A69A94;}
-.nav-button:focus, .nav-button:hover{color: #A69A94;}
+.nav-button:focus, .nav-button:hover{color: #000;}
 /*.nav-button:before,.nav-close:before{display:block;text-align:center}*/
 /*.nav-button{
   display: block;
