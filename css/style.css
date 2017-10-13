@@ -110,8 +110,7 @@ width: 100%;
 @media (min-width: 960px){
   .fix{flex: 0 0 300px;}
   .rubber{padding-right: 15px;}
-  .two-column-hint a .proj-name{color: white}
-  .news-item:hover .two-column-hint a h4 {color: #dedede}
+
 }
 @media (max-width: 991px){
   body { padding-top: 0; }
@@ -136,6 +135,8 @@ width: 100%;
       margin-right: 15px;
       padding: 0 20px;
   }
+  .two-column-hint a .proj-name{color: white}
+  .news-item:hover .two-column-hint a h4 {color: #dedede}
 }
 .container {
   /*padding-right: 0;*/
